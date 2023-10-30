@@ -74,5 +74,16 @@ nav .navitem a:hover {
 
 .row-1 figure {
   width: 30%;
+}
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 7% 10%;
+}
+
+.contact li {
+  width: 20%;
+  list-style: none;
 }
