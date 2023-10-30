@@ -1,0 +1,78 @@
+body {
+  font-family: system-ui;
+  background-color: #FCFDFE;
+  font-weight: 300;
+  margin: 0 0;
+}
+
+nav {
+  background-color: #292A36;
+  padding: 2% 2%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: larger;
+}
+
+.navitem {
+  width: 30%;
+  align-self: center;
+}
+
+.name {
+  width: 60%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FCFDFE;
+}
+
+.pic-intro {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+#portrait img {
+  width: 100%;
+  height: auto;
+  clip-path: circle();
+}
+
+.intro {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.pic-intro figure {
+  width: 30%;
+  margin-left: 7%;
+}
+
+.about {
+  background-color: lightgray;
+  padding: 7%;
+}
+
+nav .navitem a:hover {
+  text-decoration: underline;
+}
+
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.row-1 figure {
+  width: 30%;
+
+}
