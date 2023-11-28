@@ -1,18 +1,20 @@
 body {
-  font-family: system-ui;
+  font-family: Inter;
   background-color: #FCFDFE;
   font-weight: 300;
-  margin: 0 0;
+  margin: 0;
 }
 
 nav {
-  background-color: #292A36;
-  padding: 2% 2%;
+  background-color: white;
+  padding: 1%;
+  justify-content: space-between;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
+
 }
 
 nav ul li {
@@ -21,21 +23,22 @@ nav ul li {
 }
 
 .navitem {
-  width: 30%;
   align-self: center;
+  width: 10%;
 }
 
-.name {
+.nav-name {
+  float: left;
   width: 60%;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #FCFDFE;
+  color: black;
 }
 
 .pic-intro {
-  margin-top: 5%;
+  margin-top: 1%;
   display: flex;
   flex-direction: row;
 }
@@ -43,7 +46,6 @@ nav ul li a {
 #portrait img {
   width: 100%;
   height: auto;
-  clip-path: circle();
 }
 
 .intro {
@@ -56,23 +58,69 @@ nav ul li a {
   margin-left: 7%;
 }
 
-.about {
-  background-color: lightgray;
-  padding: 7%;
+.about-facts li::marker {
+  content: "> ";
+}
+
+.about-facts li {
+  padding: 5px;
+  color: gray;
+}
+
+.about-facts li:hover {
+  color: black;
+}
+
+#section-2 {
+  background-color: #1A1F23;
+  padding: 4%;
+  display: flex;
+  flex-direction: row;
+}
+
+.education {
+  width: 45%;
+  padding: 2%;
+  margin-right: 5%;
+  color: lightgray;
+  border: solid;
+  border-color: white;
+}
+
+.education:hover {
+  color: white;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.work {
+  margin-left: 2%;
+  color: lightgray;
+  margin-top: 1px;
+}
+
+.workitem:hover {
+  color: white;
 }
 
 nav .navitem a:hover {
   text-decoration: underline;
 }
 
-
-.row-1 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
+#section-3 h1 {
+  text-align: center;
+  padding: 1%;
 }
 
-.row-1 figure {
+.row {
+  margin: 0% 9%;
+  display: flex;
+  flex-direction: row;
+}
+
+.row figure {
   width: 30%;
 }
 
@@ -80,10 +128,15 @@ nav .navitem a:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 7% 10%;
+  margin: 7% 9%;
 }
 
 .contact li {
   width: 20%;
   list-style: none;
+}
+
+#mtn {
+  max-width: 100%;
+  height: auto;
 }
