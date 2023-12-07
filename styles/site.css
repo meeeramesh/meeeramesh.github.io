@@ -3,18 +3,23 @@ body {
   background-color: #FCFDFE;
   font-weight: 300;
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
   background-color: white;
-  padding: 1%;
+  padding: .25em;
   justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 2px 2px 5px #aaaaaa;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-
+  margin-right: 0;
 }
 
 nav ul li {
@@ -23,13 +28,15 @@ nav ul li {
 }
 
 .navitem {
-  width: 10%;
   text-align: center;
+  padding: 3px 25px;
   float: right;
+
 }
 
 .nav-name {
   float: left;
+  padding: 5px;
   width: 60%;
 }
 
@@ -44,10 +51,13 @@ nav ul li a {
   flex-direction: row;
 }
 
-#portrait img {
+img {
   width: 100%;
   height: auto;
-  animation: ease-in;
+}
+
+#top-bar {
+  margin: 0 0;
 }
 
 .intro {
@@ -75,12 +85,89 @@ nav ul li a {
 
 #section-2 {
   background-color: #5B5B5B;
-  /* #9DAEB5; */
-  /* #1A1F23;*/
-  padding: 4%;
+  margin: 5% 5%;
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.browser {
+  background-color: #E2E2E2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  background-color: #E2E2E2;
+  width: 100%;
+  height: 6%;
   display: flex;
   flex-direction: row;
 }
+
+.curr-tab {
+  background-color: white;
+  width: 15%;
+  height: 150%;
+  border: solid;
+  border-radius: 10px;
+  border-color: white;
+}
+
+.curr-tab p {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+.window {
+  background-color: white;
+  width: 100%;
+  height: 120%;
+  display: flex;
+  padding: 1% 0;
+  overflow: scroll;
+}
+
+#timeline {
+  margin-left: 5%;
+}
+
+.work-title-div {
+  width: 21%;
+}
+
+
+.work-title-main {
+  font-size: 21px;
+}
+
+.work-title-subheading {
+  font-size: 17px;
+}
+
+.work-descr-div {
+  width: 60%;
+}
+
+.tags {
+  margin-left: 2%;
+}
+
+.tag {
+  border: solid;
+  background-color: #D3DBDE;
+  border-color: #D3DBDE;
+  margin: 0 0.25em;
+  padding: 0.25em 0.5em;
+  border-radius: 15px;
+}
+
 
 .education {
   width: 45%;
@@ -113,19 +200,33 @@ nav .navitem a:hover {
   text-decoration: underline;
 }
 
+#section-3 {
+  margin: 50px;
+}
+
 #section-3 h1 {
   text-align: center;
   padding: 1%;
 }
 
-.row {
-  margin: 0% 9%;
-  display: flex;
-  flex-direction: row;
+.grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 0;
 }
 
-.row figure {
-  width: 30%;
+.grid li {
+  list-style: none;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  background-color: #9DAEB5;
+}
+
+.project {
+  margin-top: 5%;
+  color: white;
 }
 
 .contact {
@@ -136,7 +237,8 @@ nav .navitem a:hover {
 }
 
 .contact li {
-  width: 20%;
+  padding: 0 4%;
+  width: 10%;
   list-style: none;
 }
 

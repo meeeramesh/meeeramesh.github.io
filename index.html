@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -17,16 +19,18 @@
     <nav>
       <ul>
         <li class="nav-name"><a href="/">Meera Ramesh</a></li>
-        <li class="navitem"><a href="/">About</a></li>
-        <li class="navitem"><a href="#section-2">Experience</a></li>
-        <li class="navitem"><a href="#section-3">Projects</a></li>
-        <li class="navitem"><a href="#section-4">Contact</a></li>
+        <li class="navitem"><a href="#section-1" class="nav-link" data-target="#section-1">About</a></li>
+        <li class="navitem"><a href="#section-2" class="nav-link" data-target="#section-2">Experience</a></li>
+        <li class="navitem"><a href="#section-3" class="nav-link" data-target="#section-3">Projects</a></li>
+        <li class="navitem"><a href="#section-4" class="nav-link" data-target="#section-4">Contact</a></li>
       </ul>
     </nav>
   </header>
   <picture>
     <img id='mtn' src="./images/mountains.png" alt="mountains">
   </picture>
+
+
   <div id="section-1" class="pic-intro">
     <figure id="portrait"><img src="images/meera-2.png" alt="Meera"></figure>
     <div class="intro">
@@ -43,6 +47,74 @@
   </div>
 
   <div id="section-2">
+    <div class="browser">
+      <figure id="top-bar"><img src="images/top-bar.png" alt="Browser Bar"></figure>
+      <div class="tabs">
+        <div class="curr-tab">
+          <p> Work </p>
+        </div>
+        <!-- <figure id="plus"><img src="images/plus.png" alt="Plus Icon"></figure> -->
+      </div>
+      <div class="window">
+        <figure id="timeline"><img src="images/timeline.png" alt="Timeline Icon"></figure>
+        <div class="work-title-div">
+          <br>
+          <div class="work-title-item">
+            <h2 class="work-title-main">MathWorks, Inc.</h2>
+            <h3 class="work-title-subheading">Software Engineering Intern</h3>
+            <h3 class="work-title-subheading">May 2022 - August 2022</h3>
+          </div>
+          <br>
+          <div class="work-title-item">
+            <h2 class="work-title-main">Microsoft</h2>
+            <h3 class="work-title-subheading">Software Engineering Intern</h3>
+            <h3 class="work-title-subheading">May 2023 - August 2023</h3>
+          </div>
+          <br>
+          <div class="work-title-item">
+            <h2 class="work-title-main">Microsoft</h2>
+            <h3 class="work-title-subheading">Software Engineer</h3>
+            <h3 class="work-title-subheading">Incoming March 2024</h3>
+          </div>
+        </div>
+        <div class="work-descr-div">
+          <div class="work-descr-item">
+            <ul class="work-descr-list">
+              <li>Developed an automated cloud testing tool in Python to validate the MATLAB Web App Server reference
+                architecture</li>
+              <li>Automated AWS stack deployment, authentication, and web interaction</li>
+              <li>Automated daily health checks and reduced manual work by 50%</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag"> AWS </span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Selenium</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="work-descr-item">
+            <ul class="work-descr-list">
+              <li>Reduced the Azure cache for Redis server utilization in Sonar Cloud Intelligence Platform from ~90% to
+                under ~70%</li>
+              <li>Reduced UrlClusterHash query volume by 99%, making space for new indicator types to improve protection
+                effectiveness</li>
+              <li>Created an Azure load test tool to validate Publish API endpoints via Apache JMeter</li>
+            </ul>
+            <div class="tags">
+              <span class="tag"> C# </span>
+              <span class="tag"> Azure </span>
+              <span class="tag"> Redis </span>
+              <span class="tag"> Kusto </span>
+              <span class="tag"> CosmosDB </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
     <div class="education">
       <h2>Cornell University</h2>
       <h3>B.S. Computer Science, College of Engineering</h3>
@@ -66,44 +138,28 @@
         <li>Introductory Design and Programming for the Web - Teaching Assistant</li>
       </ul>
     </div>
-    <div class="timeline">
-      <picture>
-        <img id='timeline' src="./images/timeline.png" alt="timeline">
-      </picture>
-    </div>
-    <div class="work">
-      <div class="workitem">
-        <h2>Mathworks, Inc.</h2>
-        <p>Software Engineering Intern</p>
-        <p>May 2022 - August 2022</p>
-      </div>
-      <br></br>
-      <div class="workitem">
-        <h2>Microsoft</h2>
-        <p>Software Engineering Intern</p>
-        <p>May 2023 - August 2023</p>
-      </div>
-      <br></br>
-      <div class="workitem">
-        <h2>Microsoft</h2>
-        <p>Incoming Software Engineer</p>
-        <p>March 2024</p>
-      </div>
-    </div>
+  -->
   </div>
 
   <div id="section-3">
     <h1>Projects</h1>
-    <div class="row">
-      <figure><img src="images/blue.png" width=310 height=300 alt=""></figure>
-      <figure><img src="images/blue.png" width=310 height=300 alt=""></figure>
-      <figure><img src="images/blue.png" width=310 height=300 alt=""></figure>
-    </div>
-    <div class="row">
-      <figure><img src="images/blue.png" width=310 height=300 alt=""></figure>
-      <figure><img src="images/blue.png" width=310 height=300 alt=""></figure>
-      <figure><img src="images/blue.png" width=310 height=300 alt=""></figure>
-    </div>
+    <ul class="grid">
+      <li>
+        <div class="project">
+          <h2>Temple of Zeus</h2>
+        </div>
+      </li>
+      <li>
+        <div class="project">
+          <h2>Temple of Zeus</h2>
+        </div>
+      </li>
+      <li>
+        <div class="project">
+          <h2>Temple of Zeus</h2>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <div id="section-4">
