@@ -200,33 +200,75 @@ nav .navitem a:hover {
   text-decoration: underline;
 }
 
-#section-3 {
-  margin: 50px;
-}
-
 #section-3 h1 {
   text-align: center;
-  padding: 1%;
 }
 
 .grid {
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 50px;
   padding-left: 0;
+  margin: 50px 125px;
 }
 
 .grid li {
   list-style: none;
-  width: 80%;
+  width: 350px;
   height: 300px;
   margin: auto;
   background-color: #9DAEB5;
 }
 
 .project {
+  position: relative;
   margin-top: 5%;
+  padding-top: 8%;
   color: white;
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F8F8F8;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .4s, visibility .4s;
+}
+
+.project:hover .description {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+.p-description {
+  transition: .5s;
+  color: #575757;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.description p:hover {
+  opacity: 1;
+}
+
+.project-icon {
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
 
 .contact {
