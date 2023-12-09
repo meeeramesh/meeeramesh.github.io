@@ -200,7 +200,8 @@ nav .navitem a:hover {
   text-decoration: underline;
 }
 
-#section-3 h1 {
+#section-3 h1,
+#section-3b h1 {
   text-align: center;
 }
 
@@ -219,6 +220,14 @@ nav .navitem a:hover {
   height: 300px;
   margin: auto;
   background-color: #9DAEB5;
+}
+
+.grid .gall {
+  list-style: none;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background-color: white;
 }
 
 .project {
