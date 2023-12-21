@@ -7,11 +7,10 @@ body {
 }
 
 nav {
+  width: 100%;
   background-color: white;
   padding: .25em;
-  justify-content: space-between;
   top: 0px;
-  width: 100%;
   position: fixed;
   box-shadow: 2px 2px 5px #aaaaaa;
 }
@@ -37,7 +36,7 @@ nav ul li {
 .nav-name {
   float: left;
   padding: 5px;
-  width: 60%;
+  width: 65%;
 }
 
 nav ul li a {
@@ -70,13 +69,27 @@ img {
   margin-left: 7%;
 }
 
-.about-facts li::marker {
-  content: "> ";
+.about-facts {
+  margin-right: 5%;
+}
+
+
+.about-facts #li-1::marker {
+  content: "🎓   ";
+}
+
+.about-facts #li-2::marker {
+  content: "☁️   ";
+}
+
+.about-facts #li-3::marker {
+  content: "✈️   ";
 }
 
 .about-facts li {
   padding: 5px;
   color: gray;
+  line-height: 1.75;
 }
 
 .about-facts li:hover {
@@ -105,24 +118,51 @@ img {
 .tabs {
   background-color: #E2E2E2;
   width: 100%;
-  height: 6%;
+  height: 45px;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .curr-tab {
   background-color: white;
-  width: 15%;
-  height: 150%;
-  border: solid;
+  width: 150px;
+  height: 60px;
   border-radius: 10px;
-  border-color: white;
+  padding-bottom: 2em;
 }
 
-.curr-tab p {
-  margin-left: 1em;
-  margin-bottom: 1em;
-  margin-top: 0.5em;
+.other-tab {
+  background-color: #E2E2E2;
+  width: 150px;
+}
+
+#plus {
+  margin-left: 0.25em;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+#divider {
+  margin-top: 5px;
+}
+
+.tab {
+  text-align: left;
+  font-family: Inter;
+  font-weight: 300;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 15px;
+  border: none;
+}
+
+.other-tab:hover {
+  background-color: #EDEDED;
+  height: 60px;
+  border-radius: 10px;
+  padding-bottom: 2em;
 }
 
 .window {
@@ -130,12 +170,21 @@ img {
   width: 100%;
   height: 120%;
   display: flex;
-  padding: 1% 0;
   overflow: scroll;
+}
+
+.work-window {
+  display: flex;
+  width: 100%;
+}
+
+.educ-window {
+  width: 100%;
 }
 
 #timeline {
   margin-left: 5%;
+  height: 500px;
 }
 
 .work-title-div {
@@ -144,11 +193,11 @@ img {
 
 
 .work-title-main {
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .work-title-subheading {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .work-descr-div {
@@ -195,6 +244,142 @@ h2 {
 .workitem:hover {
   color: white;
 }
+
+.educ-header {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+}
+
+.educ-header h3 {
+  margin-bottom: 0;
+}
+
+#cornell {
+  width: 120px;
+  height: auto;
+  margin-top: 0.5em;
+}
+
+.educ-divider {
+  height: 10px;
+  width: 100%;
+  background-color: #BC3941;
+}
+
+.educ-activities {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.educ-univ ul {
+  margin-top: 0.5em;
+  padding-left: 0;
+}
+
+.educ-univ ul li {
+  list-style: none;
+}
+
+.educ-coursework {
+  width: 57%;
+}
+
+.educ-coursework h3 {
+  margin-left: 30px;
+  margin-bottom: 1em;
+}
+
+.educ-courses {
+  background-color: lightgray;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 1.5em;
+  margin-right: 2em;
+}
+
+.educ-ec {
+  margin-left: 5px;
+  width: 100%;
+}
+
+.ec-photo {
+  margin: 0;
+  margin-right: 1em;
+}
+
+.ec-photo img {
+  height: 200px;
+  width: auto;
+}
+
+.ec-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.ec-sidebar {
+  margin-top: 0;
+  background-color: lightgray;
+}
+
+.ec-section button {
+  display: block;
+  width: 100px;
+  text-align: left;
+  padding: 0.75em 0;
+  padding-left: 1em;
+  padding-right: 0.5em;
+  border: none;
+  font-family: Inter;
+}
+
+.ec-unclicked {
+  background-color: lightgray;
+}
+
+.ec-clicked {
+  background-color: #F3F3F3;
+}
+
+.ec-section button:hover {
+  background-color: #F3F3F3;
+}
+
+#wicc {
+  padding-top: 1.25em;
+}
+
+
+
+.ec-main {
+  width: 100%;
+  font-size: 14px;
+  background-color: #F3F3F3;
+  padding: 1em;
+  margin-right: 2em;
+  padding-left: 1.5em;
+}
+
+.ec-main p {
+  margin-top: 0.5em;
+}
+
+.ec-main h3 {
+  margin-top: 0;
+}
+
+.ec-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.ec-content p {
+  margin-top: 0;
+}
+
 
 nav .navitem a:hover {
   text-decoration: underline;
@@ -305,4 +490,22 @@ nav .navitem a:hover {
   transform: scaleX(0);
   transition: 350ms ease-in-out;
   transform-origin: 0% 50%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}
+
+#mtn {
+  width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

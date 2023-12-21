@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Meera Ramesh</title>
   <link rel="stylesheet" type="text/css" href="styles/site.css" />
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap"
@@ -19,9 +20,9 @@
     <nav>
       <ul>
         <li class="nav-name"><a href="/">Meera Ramesh</a></li>
-        <li class="navitem"><a href="#section-1" class="nav-link" data-target="#section-1">About</a></li>
-        <li class="navitem"><a href="#section-2" class="nav-link" data-target="#section-2">Experience</a></li>
-        <li class="navitem"><a href="#section-3b" class="nav-link" data-target="#section-3b">Gallery</a></li>
+        <li class="navitem"><a href="#section-1" class="nav-link" data-target="#section-1">Home</a></li>
+        <li class="navitem"><a href="#section-2" class="nav-link" data-target="#section-2">About</a></li>
+        <li class="navitem"><a href="#section-3" class="nav-link" data-target="#section-3">Projects</a></li>
         <li class="navitem"><a href="#section-4" class="nav-link" data-target="#section-4">Contact</a></li>
       </ul>
     </nav>
@@ -32,15 +33,17 @@
 
 
   <div id="section-1" class="pic-intro">
-    <figure id="portrait"><img src="images/meera-2.png" alt="Meera"></figure>
+    <figure id="portrait"><img src="images/meera.png" alt="Meera"></figure>
     <div class="intro">
       <h1 class='home-title'>Meera Ramesh</h1>
-      <p class='home-text'>Welcome! I'm Meera, a Computer Science student at Cornell University. </p>
+      <p class='home-text'>Welcome! I'm Meera, a software developer. </p>
       <div class="about-facts">
         <ul>
-          <li>My hometown is Boxborough, Massachusetts. </li>
-          <li> I am an incoming Software Engineer in Azure Cybersecurity.</li>
-          <li>I love traveling and exploring new cities!</li>
+          <li id="li-1">I recently graduated from Cornell University with a B.S. in Computer Science and minors in
+            Biometry & Statistics, Data Science, and Information Science.</li>
+          <li id="li-2">I am an incoming software engineer in the Cloud Ecosystem Security (CES) division at Microsoft.
+          </li>
+          <li id="li-3">In my free time, I love dance, design, and exploring new places!</li>
         </ul>
       </div>
     </div>
@@ -48,97 +51,138 @@
 
   <div id="section-2">
     <div class="browser">
-      <figure id="top-bar"><img src="images/top-bar.png" alt="Browser Bar"></figure>
+      <figure id="top-bar"><img src="images/elements/top-bar.png" alt="Browser Bar"></figure>
       <div class="tabs">
-        <div class="curr-tab">
-          <p> Work </p>
-        </div>
-        <!-- <figure id="plus"><img src="images/plus.png" alt="Plus Icon"></figure> -->
+        <button id="work-tab" class="tab curr-tab">
+          <span> Work </span>
+        </button>
+        <button id="educ-tab" class="tab other-tab"><span> Education </span></button>
+        <span id="divider" class="">|</span>
+        <img id="plus" src="images/elements/plus.png" alt="Plus">
       </div>
+      <img src="images/elements/browser-bar.png" alt="Browser Bar">
       <div class="window">
-        <figure id="timeline"><img src="images/timeline.png" alt="Timeline Icon"></figure>
-        <div class="work-title-div">
-          <br>
-          <div class="work-title-item">
-            <h2 class="work-title-main">MathWorks, Inc.</h2>
-            <h3 class="work-title-subheading">Software Engineering Intern</h3>
-            <h3 class="work-title-subheading">May 2022 - August 2022</h3>
+        <div class="work-window">
+          <figure id="timeline"><img src="images/elements/timeline.png" alt="Timeline Icon"></figure>
+          <div class="work-title-div">
+            <br>
+            <div class="work-title-item">
+              <h2 class="work-title-main">MathWorks, Inc.</h2>
+              <h3 class="work-title-subheading">Software Engineering Intern</h3>
+              <h3 class="work-title-subheading">May 2022 - August 2022</h3>
+            </div>
+            <br>
+            <br>
+            <div class="work-title-item">
+              <h2 class="work-title-main">Microsoft</h2>
+              <h3 class="work-title-subheading">Software Engineering Intern</h3>
+              <h3 class="work-title-subheading">May 2023 - August 2023</h3>
+            </div>
+            <br>
+            <br>
+            <div class="work-title-item">
+              <h2 class="work-title-main">Microsoft</h2>
+              <h3 class="work-title-subheading">Software Engineer</h3>
+              <h3 class="work-title-subheading">Incoming March 2024</h3>
+            </div>
           </div>
-          <br>
-          <div class="work-title-item">
-            <h2 class="work-title-main">Microsoft</h2>
-            <h3 class="work-title-subheading">Software Engineering Intern</h3>
-            <h3 class="work-title-subheading">May 2023 - August 2023</h3>
-          </div>
-          <br>
-          <div class="work-title-item">
-            <h2 class="work-title-main">Microsoft</h2>
-            <h3 class="work-title-subheading">Software Engineer</h3>
-            <h3 class="work-title-subheading">Incoming March 2024</h3>
+          <div class="work-descr-div">
+            <div class="work-descr-item">
+              <ul class="work-descr-list">
+                <li>Developed an automated cloud testing tool in Python to validate the MATLAB Web App Server reference
+                  architecture</li>
+                <li>Automated AWS stack deployment, authentication, and web interaction</li>
+                <li>Automated daily health checks and reduced manual work by 50%</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag"> AWS </span>
+                <span class="tag">MATLAB</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="work-descr-item">
+              <ul class="work-descr-list">
+                <li>Reduced the Azure cache for Redis server utilization in Sonar Cloud Intelligence Platform from ~90%
+                  to
+                  under ~70%</li>
+                <li>Reduced UrlClusterHash query volume by 99%, making space for new indicator types to improve
+                  protection
+                  effectiveness</li>
+                <li>Created an Azure load test tool to validate Publish API endpoints via Apache JMeter</li>
+              </ul>
+              <div class="tags">
+                <span class="tag"> C# </span>
+                <span class="tag"> Azure </span>
+                <span class="tag"> Redis </span>
+                <span class="tag"> Kusto </span>
+                <span class="tag"> CosmosDB </span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="work-descr-div">
-          <div class="work-descr-item">
-            <ul class="work-descr-list">
-              <li>Developed an automated cloud testing tool in Python to validate the MATLAB Web App Server reference
-                architecture</li>
-              <li>Automated AWS stack deployment, authentication, and web interaction</li>
-              <li>Automated daily health checks and reduced manual work by 50%</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag"> AWS </span>
-              <span class="tag">MATLAB</span>
-              <span class="tag">Selenium</span>
-              <span class="tag">JavaScript</span>
+        <div class="educ-window remove">
+          <div class="educ-header">
+            <figure id="cornell"><img src="images/cornell-logo.png" alt="Cornell Logo"></figure>
+            <div class="educ-univ">
+              <h3>Cornell University</h3>
+              <ul>
+                <li>B.S. Computer Science, College of Engineering</li>
+                <li>Minors: Data Science, Information Science, Biometry & Statistics</li>
+                <li>September 2020 - December 2023</li>
+              </ul>
             </div>
           </div>
-          <div class="work-descr-item">
-            <ul class="work-descr-list">
-              <li>Reduced the Azure cache for Redis server utilization in Sonar Cloud Intelligence Platform from ~90% to
-                under ~70%</li>
-              <li>Reduced UrlClusterHash query volume by 99%, making space for new indicator types to improve protection
-                effectiveness</li>
-              <li>Created an Azure load test tool to validate Publish API endpoints via Apache JMeter</li>
-            </ul>
-            <div class="tags">
-              <span class="tag"> C# </span>
-              <span class="tag"> Azure </span>
-              <span class="tag"> Redis </span>
-              <span class="tag"> Kusto </span>
-              <span class="tag"> CosmosDB </span>
+          <div class="educ-divider"></div>
+          <div class="educ-activities">
+            <div class="educ-coursework">
+              <h3>Relevant Coursework</h3>
+              <ul class="educ-courses">
+                <li>Intro to Computing in Python (TA)</li>
+                <li>Intro Web Design and Programming (TA)</li>
+                <li>Object-Oriented Programming and Data Structures</li>
+                <li>Analysis of Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Databases</li>
+                <li>Biomedical Data Science</li>
+                <li>UNIX Tools and Scripting</li>
+                <li>Language and Information Processing</li>
+                <li>Data-Driven Web Applications</li>
+                <li>Computer System Organization</li>
+                <li>Operating Systems</li>
+              </ul>
             </div>
-          </div>
+            <div class="educ-ec">
+              <h3>Research & Extracurriculars</h3>
+              <div class="ec-section">
+                <div class="ec-sidebar">
+                  <button id="wicc" class="ec-item ec-clicked"> WICC </button>
+                  <button id="igem" class="ec-item ec-unclicked"> Cornell iGem </button>
+                  <button id="leelab" class="ec-item ec-unclicked"> Lee Lab </button>
+                  <button id="cardie" class="ec-item ec-unclicked"> Cardie Lab </button>
+                </div>
+                <div class="ec-main">
+                  <h3>Women in Computing at Cornell (WICC)</h3>
+                  <div class="ec-content">
+                    <figure class="ec-photo"><img src=images/wicc.png alt="CYC"></figure>
+                    <div class="ec-description">
+                      <p>I was the Career Development Director for Women in Computing at Cornell (WICC). Having
+                        struggled through my first recruiting season and feeling overwhelmed, I created a course through
+                        WICC. I lectured weekly about recruitment topics, such as finding opportunities, interviewing
+                        resources,
+                        resume advice, and career paths.</p>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!--
-    <div class="education">
-      <h2>Cornell University</h2>
-      <h3>B.S. Computer Science, College of Engineering</h3>
-
-      <p>Activities</p>
-      <ul>
-        <li>Women in Computing @ Cornell</li>
-        <li>Cornell Anjali Dance Team, Captain</li>
-        <li>Cornell iGem</li>
-      </ul>
-
-      <p>Research</p>
-      <ul>
-        <li>Clare Cardie Lab</li>
-        <li>The Lee Lab</li>
-      </ul>
-
-      <p>Work</p>
-      <ul>
-        <li>Introduction to Computing in Python - Teaching Assistant</li>
-        <li>Introductory Design and Programming for the Web - Teaching Assistant</li>
-      </ul>
-    </div>
-  -->
   </div>
 
   <div id="section-3">
@@ -173,37 +217,11 @@
             Similarity and Rocchio's Method.</p>
         </div>
       </li>
+      <!-- 4. Personal Website -->
+      <!-- 5. Stroke Prediction -->
+      <!-- 6. Cornell Cafes -->
     </ul>
-  </div>
 
-  <div id="section-3b">
-    <h1>Gallery</h1>
-    <ul class="grid">
-      <li class="project gall">
-        <figure class="gallery-img"><img src="images/dance.jpeg" width=350 height=350 alt="Meera Dancing"></figure>
-        <div class="description">
-          <p class="p-description"> I have been learning Bharatanatyam, an Indian Classical dance style, since the age
-            of six. I am captain of the Indian Classical Dance team, Cornell Anjali.
-        </div>
-      </li>
-      <li class="project gall">
-        <figure class="gallery-img"><img src="images/cyc.jpeg" width=350 height=350 alt="Meera teaching CYC"></figure>
-        <div class="description">
-          <p class="p-description"> I am part of Women in Computing at Cornell (WICC), an organization that helps women
-            with
-            career opportunities in tech. Through WICC, I launched a taught a course called Cracking Your Career (CYC),
-            which helps students prepare for job and internship recruitment. </p>
-        </div>
-      </li>
-      <li class="project gall">
-        <figure class="gallery-img"><img src="images/lab.jpeg" alt="Meera in the Lab"></figure>
-        <div class="description">
-          <p class="p-description"> I worked in the Lee Lab at Cornell on an independent breast cancer research project.
-            The project aimed to analyze lymphatic drainage in different breast tissue in order to find better means of
-            drug delivery.</p>
-        </div>
-      </li>
-    </ul>
   </div>
 
   <div id="section-4">
