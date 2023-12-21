@@ -63,17 +63,24 @@ img {
 .intro {
   margin-left: 5%;
   margin-top: 5%;
+  width: 70%;
+  flex-shrink: 1;
 }
 
 .pic-intro figure {
-  width: 30%;
   margin-left: 7%;
+  width: 30%;
+  flex-shrink: 1;
+}
+
+#portrait img {
+  max-width: 100%;
+  height: auto;
 }
 
 .about-facts {
   margin-right: 5%;
 }
-
 
 .about-facts #li-1::marker {
   content: "🎓   ";
@@ -185,13 +192,35 @@ img {
 
 #timeline {
   margin-left: 5%;
-  height: 500px;
+  height: 400px;
+  width: auto;
 }
 
-.work-title-div {
-  width: 21%;
+#timeline img {
+  height: 100%;
+  width: auto;
 }
 
+
+.work-item {
+  display: flex;
+  flex-direction: row;
+  margin: 2em 1em;
+}
+
+.work-title-item {
+  width: 25%;
+}
+
+.work-descr-item {
+  width: 75%;
+  margin-right: 2em;
+  margin-left: 1em;
+}
+
+.work-descr-list {
+  margin-top: 0;
+}
 
 .work-title-main {
   font-size: 18px;
@@ -199,10 +228,6 @@ img {
 
 .work-title-subheading {
   font-size: 15px;
-}
-
-.work-descr-div {
-  width: 60%;
 }
 
 .tags {
@@ -228,22 +253,15 @@ img {
   border-color: white;
 }
 
+
 .education:hover {
   color: white;
-}
-
-h2 {
-  margin-top: 0;
 }
 
 .work {
   margin-left: 2%;
   color: lightgray;
   margin-top: 1px;
-}
-
-.workitem:hover {
-  color: white;
 }
 
 .educ-header {
@@ -316,6 +334,7 @@ h2 {
   height: auto;
 }
 
+.ec-content,
 .ec-section {
   display: flex;
   flex-direction: row;
@@ -328,7 +347,7 @@ h2 {
 
 .ec-section button {
   display: block;
-  width: 100px;
+  width: 120px;
   text-align: left;
   padding: 0.75em 0;
   padding-left: 1em;
@@ -353,8 +372,6 @@ h2 {
   padding-top: 1.25em;
 }
 
-
-
 .ec-main {
   width: 100%;
   font-size: 14px;
@@ -362,21 +379,15 @@ h2 {
   padding: 1em;
   margin-right: 2em;
   padding-left: 1.5em;
+  min-height: 275px;
 }
 
 .ec-main p {
   margin-top: 0.5em;
 }
 
-.ec-main h3 {
-  margin-top: 0;
-}
-
-.ec-content {
-  display: flex;
-  flex-direction: row;
-}
-
+h2,
+.ec-main h3,
 .ec-content p {
   margin-top: 0;
 }
@@ -470,14 +481,14 @@ nav .navitem a:hover {
 .contact {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  margin: 7% 9%;
+  width: 60%;
+  margin: 4em auto;
+  padding: 0;
 }
 
-.contact li {
+.contact div {
+  width: 100%;
   padding: 0 4%;
-  width: 10%;
-  list-style: none;
 }
 
 #mtn {
@@ -502,12 +513,96 @@ nav .navitem a:hover {
   display: none;
 }
 
-#mtn {
-  width: 100%;
-  height: auto;
-}
-
 html,
 body {
   overflow-x: hidden;
+}
+
+@media (max-width: 750px) {
+
+  .pic-intro {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .pic-intro figure {
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .intro {
+    width: 100%;
+    margin: 0;
+  }
+
+
+  .pic-intro h1,
+  .home-text {
+    text-align: center;
+  }
+
+  .about-facts {
+    margin: 0.5em 0.25em;
+  }
+
+  #timeline,
+  .minors,
+  .educ-coursework,
+  .nav-name {
+    display: none;
+  }
+
+  .tabs {
+    height: 30px;
+  }
+
+  .tabs span {
+    font-size: 12px;
+  }
+
+  .curr-tab,
+  .other-tab:hover {
+    padding-bottom: 2.5em;
+  }
+
+  .work-descr-item {
+    font-size: 14px;
+  }
+
+  .grid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .educ-header li {
+    font-size: 14px;
+  }
+
+  .educ-ec {
+    margin-left: 1.5em;
+  }
+
+  .ec-content,
+  .work-item {
+    flex-direction: column;
+  }
+
+  .work-title-item {
+    width: 100%;
+  }
+
+  .work-item {
+    margin: 1.5em;
+  }
+
+  .work-descr-item {
+    width: 90%;
+  }
+
+  nav ul {
+    width: 100%;
+    padding-left: 5em;
+  }
 }

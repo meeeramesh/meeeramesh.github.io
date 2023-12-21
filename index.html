@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="assets/scripts/main.js"></script>
 </head>
@@ -66,61 +68,61 @@
       <div class="window">
         <div class="work-window">
           <figure id="timeline"><img src="assets/images/elements/timeline.png" alt="Timeline Icon"></figure>
-          <div class="work-title-div">
-            <br>
-            <div class="work-title-item">
-              <h2 class="work-title-main">MathWorks, Inc.</h2>
-              <h3 class="work-title-subheading">Software Engineering Intern</h3>
-              <h3 class="work-title-subheading">May 2022 - August 2022</h3>
-            </div>
-            <br>
-            <br>
-            <div class="work-title-item">
-              <h2 class="work-title-main">Microsoft</h2>
-              <h3 class="work-title-subheading">Software Engineering Intern</h3>
-              <h3 class="work-title-subheading">May 2023 - August 2023</h3>
-            </div>
-            <br>
-            <br>
-            <div class="work-title-item">
-              <h2 class="work-title-main">Microsoft</h2>
-              <h3 class="work-title-subheading">Software Engineer</h3>
-              <h3 class="work-title-subheading">Incoming March 2024</h3>
-            </div>
-          </div>
-          <div class="work-descr-div">
-            <div class="work-descr-item">
-              <ul class="work-descr-list">
-                <li>Developed an automated cloud testing tool in Python to validate the MATLAB Web App Server reference
-                  architecture</li>
-                <li>Automated AWS stack deployment, authentication, and web interaction</li>
-                <li>Automated daily health checks and reduced manual work by 50%</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag"> AWS </span>
-                <span class="tag">MATLAB</span>
-                <span class="tag">Selenium</span>
-                <span class="tag">JavaScript</span>
+          <div class="work-section">
+            <div class="work-item">
+              <div class="work-title-item">
+                <h2 class="work-title-main">MathWorks, Inc.</h2>
+                <h3 class="work-title-subheading">Software Engineering Intern</h3>
+                <h3 class="work-title-subheading">May 2022 - August 2022</h3>
+              </div>
+              <div class="work-descr-item">
+                <ul class="work-descr-list">
+                  <li>Developed an automated cloud testing tool in Python to validate the MATLAB Web App Server
+                    reference
+                    architecture</li>
+                  <li>Automated AWS stack deployment, authentication, and web interaction</li>
+                  <li>Automated daily health checks and reduced manual work by 50%</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag"> AWS </span>
+                  <span class="tag">MATLAB</span>
+                  <span class="tag">Selenium</span>
+                  <span class="tag">JavaScript</span>
+                </div>
               </div>
             </div>
-            <br>
-            <div class="work-descr-item">
-              <ul class="work-descr-list">
-                <li>Reduced the Azure cache for Redis server utilization in Sonar Cloud Intelligence Platform from ~90%
-                  to
-                  under ~70%</li>
-                <li>Reduced UrlClusterHash query volume by 99%, making space for new indicator types to improve
-                  protection
-                  effectiveness</li>
-                <li>Created an Azure load test tool to validate Publish API endpoints via Apache JMeter</li>
-              </ul>
-              <div class="tags">
-                <span class="tag"> C# </span>
-                <span class="tag"> Azure </span>
-                <span class="tag"> Redis </span>
-                <span class="tag"> Kusto </span>
-                <span class="tag"> CosmosDB </span>
+            <div class="work-item">
+              <div class="work-title-item">
+                <h2 class="work-title-main">Microsoft</h2>
+                <h3 class="work-title-subheading">Software Engineering Intern</h3>
+                <h3 class="work-title-subheading">May 2023 - August 2023</h3>
+              </div>
+              <div class="work-descr-item">
+                <ul class="work-descr-list">
+                  <li>Reduced the Azure cache for Redis server utilization in Sonar Cloud Intelligence Platform from
+                    ~90%
+                    to
+                    under ~70%</li>
+                  <li>Reduced UrlClusterHash query volume by 99%, making space for new indicator types to improve
+                    protection
+                    effectiveness</li>
+                  <li>Created an Azure load test tool to validate Publish API endpoints via Apache JMeter</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag"> C# </span>
+                  <span class="tag"> Azure </span>
+                  <span class="tag"> Redis </span>
+                  <span class="tag"> Kusto </span>
+                  <span class="tag"> CosmosDB </span>
+                </div>
+              </div>
+            </div>
+            <div class="work-item">
+              <div class="work-title-item">
+                <h2 class="work-title-main">Microsoft</h2>
+                <h3 class="work-title-subheading">Software Engineer</h3>
+                <h3 class="work-title-subheading">Incoming March 2024</h3>
               </div>
             </div>
           </div>
@@ -132,7 +134,7 @@
               <h3>Cornell University</h3>
               <ul>
                 <li>B.S. Computer Science, College of Engineering</li>
-                <li>Minors: Data Science, Information Science, Biometry & Statistics</li>
+                <li class="minors">Minors: Data Science, Information Science, Biometry & Statistics</li>
                 <li>September 2020 - December 2023</li>
               </ul>
             </div>
@@ -164,6 +166,7 @@
                   <button id="leelab" class="ec-item ec-unclicked"> Lee Lab </button>
                   <button id="igem" class="ec-item ec-unclicked"> Cornell iGem </button>
                   <button id="cardie" class="ec-item ec-unclicked"> Cardie Lab </button>
+                  <button id="dance" class="ec-item ec-unclicked"> Cornell Anjali </button>
                 </div>
                 <div id="wicc-content" class="ec-main">
                   <h3>Women in Computing at Cornell (WICC)</h3>
@@ -225,6 +228,20 @@
                         data using python pickle
                         for test, train, and validation
                         datasets, and dataset representation in Jupyter Notebook.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="dance-content" class="ec-main remove">
+                  <h3>Cornell Anjali</h3>
+                  <div class="ec-content">
+                    <figure class="ec-photo"><img src=assets/images/dance.png alt="Cornell Anjali"></figure>
+                    <div class="ec-description">
+                      <p> Cornell Anjali is Cornell's Indian Classical Dance Team, where I was co-Captain. In 2023, we
+                        placed 3rd nationally at the UMD Mayuri competition. I have been learning the dance form of
+                        Bharatanatyam since
+                        the
+                        age of six, and hope to integrate it into my life beyond college!
                       </p>
                     </div>
                   </div>
@@ -309,17 +326,17 @@
   </div>
 
   <div id="section-4">
-    <ul class="contact">
-      <li class="contact-item"><a href='https://www.linkedin.com/in/meera-ramesh-9813211b5/'><img
-            src="assets/images/icons/contact/linkedin.png" alt="LinkedIn" width=100 height=100></a></li>
-      <li class="contact-item"><a href='https://www.instagram.com/meeeramesh/'><img
-            src="assets/images/icons/contact/instagram.png" alt="Instagram" width=100 height=100></a></li>
-      <li class="contact-item"><a href='mailto:mr828@cornell.edu'><img src="assets/images/icons/contact/email.png"
+    <div class="contact">
+      <div class="contact-item"><a href='https://www.linkedin.com/in/meera-ramesh-9813211b5/'><img
+            src="assets/images/icons/contact/linkedin.png" alt="LinkedIn" width=100 height=100></a></div>
+      <div class="contact-item"><a href='https://www.instagram.com/meeeramesh/'><img
+            src="assets/images/icons/contact/instagram.png" alt="Instagram" width=100 height=100></a></div>
+      <div class="contact-item"><a href='mailto:mr828@cornell.edu'><img src="assets/images/icons/contact/email.png"
             alt="Email" width=100 height=100></a>
-      </li>
-      <li class="contact-item"><a href='https://github.coecis.cornell.edu/mr828'><img
-            src="assets/images/icons/contact/github.png" alt="GitHub" width=100 height=100></a></li>
-    </ul>
+      </div>
+      <div class="contact-item"><a href='https://github.coecis.cornell.edu/mr828'><img
+            src="assets/images/icons/contact/github.png" alt="GitHub" width=100 height=100></a></div>
+    </div>
   </div>
 
 </body>
