@@ -13,6 +13,7 @@ nav {
   top: 0px;
   position: fixed;
   box-shadow: 2px 2px 5px #aaaaaa;
+  z-index: 100;
 }
 
 nav ul {
@@ -405,6 +406,7 @@ nav .navitem a:hover {
   height: 300px;
   margin: auto;
   background-color: #9DAEB5;
+  border-radius: 20px;
 }
 
 .grid .gall {
