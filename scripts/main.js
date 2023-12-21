@@ -7,7 +7,8 @@ $(document).ready(function () {
     var target = $(this).data("target");
     var offset = $(target).offset().top;
 
-    $("html, body").animate({ scrollTop: offset }, 800);
+    var offsetValue = offset - 100;
+    $("html, body").animate({ scrollTop: offsetValue }, 800);
   });
 
   // Tab switching
@@ -30,10 +31,16 @@ $(document).ready(function () {
 
   // Extracurriculars Tab Switching
   $(document).on('click', '.ec-unclicked', function () {
-    $('.ec-item').removeClass('.ec-clicked');
-    $('.ec-item').addClass('.ec-unclicked');
-    $(this).addClass('.ec-clicked');
-  })
+    $('.ec-item').removeClass('ec-clicked');
+    $('.ec-item').addClass('ec-unclicked');
+    $(this).removeClass('ec-unclicked');
+    $(this).addClass('ec-clicked');
+
+    $('.ec-main').addClass("remove");
+    var buttonId = $(this).attr("id");
+    $("#" + buttonId + "-content").removeClass("remove");
+
+  });
 
 
 });

@@ -20,31 +20,33 @@
     <nav>
       <ul>
         <li class="nav-name"><a href="/">Meera Ramesh</a></li>
-        <li class="navitem"><a href="#section-1" class="nav-link" data-target="#section-1">Home</a></li>
-        <li class="navitem"><a href="#section-2" class="nav-link" data-target="#section-2">About</a></li>
-        <li class="navitem"><a href="#section-3" class="nav-link" data-target="#section-3">Projects</a></li>
-        <li class="navitem"><a href="#section-4" class="nav-link" data-target="#section-4">Contact</a></li>
+        <li class="navitem"><a href="#section-1" class="nav-link anchor" data-target="#section-1">Home</a></li>
+        <li class="navitem"><a href="#section-2" class="nav-link anchor" data-target="#section-2">About</a></li>
+        <li class="navitem"><a href="#section-3" class="nav-link anchor" data-target="#section-3">Projects</a></li>
+        <li class="navitem"><a href="#section-4" class="nav-link anchor" data-target="#section-4">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <picture>
-    <img id='mtn' src="./images/mountains.png" alt="mountains">
-  </picture>
 
-
-  <div id="section-1" class="pic-intro">
-    <figure id="portrait"><img src="images/meera.png" alt="Meera"></figure>
-    <div class="intro">
-      <h1 class='home-title'>Meera Ramesh</h1>
-      <p class='home-text'>Welcome! I'm Meera, a software developer. </p>
-      <div class="about-facts">
-        <ul>
-          <li id="li-1">I recently graduated from Cornell University with a B.S. in Computer Science and minors in
-            Biometry & Statistics, Data Science, and Information Science.</li>
-          <li id="li-2">I am an incoming software engineer in the Cloud Ecosystem Security (CES) division at Microsoft.
-          </li>
-          <li id="li-3">In my free time, I love dance, design, and exploring new places!</li>
-        </ul>
+  <div id="section-1">
+    <picture>
+      <img id='mtn' src="./images/mountains.png" alt="mountains">
+    </picture>
+    <div class="pic-intro">
+      <figure id="portrait"><img src="images/meera.png" alt="Meera"></figure>
+      <div class="intro">
+        <h1 class='home-title'>Meera Ramesh</h1>
+        <p class='home-text'>Welcome! I'm Meera, a software developer. </p>
+        <div class="about-facts">
+          <ul>
+            <li id="li-1">I recently graduated from Cornell University with a B.S. in Computer Science and minors in
+              Biometry & Statistics, Data Science, and Information Science.</li>
+            <li id="li-2">I am an incoming software engineer in the Cloud Ecosystem Security (CES) division at
+              Microsoft.
+            </li>
+            <li id="li-3">In my free time, I love dance, design, and exploring new places!</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -102,6 +104,7 @@
                 <span class="tag">JavaScript</span>
               </div>
             </div>
+            <br>
             <div class="work-descr-item">
               <ul class="work-descr-list">
                 <li>Reduced the Azure cache for Redis server utilization in Sonar Cloud Intelligence Platform from ~90%
@@ -158,11 +161,11 @@
               <div class="ec-section">
                 <div class="ec-sidebar">
                   <button id="wicc" class="ec-item ec-clicked"> WICC </button>
-                  <button id="igem" class="ec-item ec-unclicked"> Cornell iGem </button>
                   <button id="leelab" class="ec-item ec-unclicked"> Lee Lab </button>
+                  <button id="igem" class="ec-item ec-unclicked"> Cornell iGem </button>
                   <button id="cardie" class="ec-item ec-unclicked"> Cardie Lab </button>
                 </div>
-                <div class="ec-main">
+                <div id="wicc-content" class="ec-main">
                   <h3>Women in Computing at Cornell (WICC)</h3>
                   <div class="ec-content">
                     <figure class="ec-photo"><img src=images/wicc.png alt="CYC"></figure>
@@ -175,7 +178,57 @@
                     </div>
                   </div>
                 </div>
-
+                <div id="leelab-content" class="ec-main remove">
+                  <h3>The Lee Lab</h3>
+                  <div id="leelab-content" class="ec-content">
+                    <figure class="ec-photo"><img src=images/leelab.jpg alt="The Lee Lab"></figure>
+                    <div class="ec-description">
+                      <p>Building off the breast cancer metastasis research I assisted with in high school, I
+                        conducted an independent research project to study the enhanced permeability and retention (EPR)
+                        effect in different types of
+                        breast cancer cells to improve drug delivery mechanisms. I
+                        performed nanoparticle
+                        drainage experiments on a biomimetic tumor-on-chip
+                        platform specifically curated by the Lee Lab. I was <a
+                          href="https://www.bme.cornell.edu/news/twelve-bme-focused-undergraduate-research-projects-receive-engineering-learning-initiative-eli">awarded
+                          a $5000 grant </a> from
+                        Engineering Learning Iniatives for this project. Read more about the project <a
+                          href="poster.pdf">here!</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div id="igem-content" class="ec-main remove">
+                  <h3>Cornell iGem</h3>
+                  <div class="ec-content">
+                    <figure class="ec-photo"><img src=images/igem.png alt="iGem"></figure>
+                    <div class="ec-description">
+                      <p>Cornell iGem is a project team that specializes in harnessing synthetic biology to solve
+                        real-world problems. As part of iGem, I helped create Collatrix, which focuses on developing
+                        protein-based
+                        hydrogel scaffolds for wound healing research and applications. Collatrix was developed by using
+                        collagen and gelatin to develop ECM-like hydrogels, and subsequently engineering E. Coli to
+                        produce Scl2
+                        proteins to bind to and grow on the hydrogel structure. The project received a silver medal at
+                        the 2021 iGem Jamboree.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="cardie-content" class="ec-main remove">
+                  <h3>The Cardie Lab</h3>
+                  <div class="ec-content">
+                    <div class="ec-description">
+                      <p>The Cardie Lab was my introduction to using CS for large datasets. I assisted with a project
+                        studying Long Document Abstractive Summarization
+                        models. The project assessed different text summarization models such as BART and Longformer on
+                        different datasets and evaluated
+                        them using ROUGE metrics. My roles included dataset manipulation, serializing and deserializing
+                        data using python pickle
+                        for test, train, and validation
+                        datasets, and dataset representation in Jupyter Notebook.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +257,9 @@
             alt="Instant Messaging Icon">
         </figure>
         <div class="description">
-          <p class="p-description"> An instant messaging application that allows for messaging across computers built in
+          <p class="p-description"> An instant messaging application that allows for messaging across computers
+            built
+            in
             OCaml using Python socket programming.</p>
         </div>
       </li>
@@ -212,7 +267,8 @@
         <h2>Flavors of India</h2>
         <figure class="project-icon"><img src="images/eco-food.png" alt="Food Icon"></figure>
         <div class="description">
-          <p class="p-description"> A recipe recommendation system built using Python, HTML, JavaScript, CSS, and Flask.
+          <p class="p-description"> A recipe recommendation system built using Python, HTML, JavaScript, CSS, and
+            Flask.
             Utilized NLP concepts such as Cosine
             Similarity and Rocchio's Method.</p>
         </div>
